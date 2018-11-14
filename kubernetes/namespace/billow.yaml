@@ -1,0 +1,6 @@
+name: kubernetes/namespace
+dependencies:
+  cluster:
+    type: azure/kubernetes-service
+deploy:
+  type: docker/container

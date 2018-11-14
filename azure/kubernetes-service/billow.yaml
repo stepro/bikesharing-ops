@@ -1,0 +1,7 @@
+name: azure/kubernetes-service
+dependencies:
+  environment:
+    type: environment
+deploy:
+  type: docker/container
+  create:

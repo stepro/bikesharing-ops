@@ -1,0 +1,12 @@
+type: docker/registry
+environment:
+  development:
+    deploy:
+      type: azure/container-registry
+      sku: Standard
+  production:
+    deploy:
+      type: azure/container-registry
+      sku: Premium
+exports:
+  loginServer: $(deploy.loginServer)
